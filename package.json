@@ -34,13 +34,13 @@
     "vegalite",
     "wavedrom"
   ],
-  "publisher": "pomdtr",
+  "publisher": "TECH7Fox",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/pomdtr/vscode-markdown-kroki.git"
+    "url": "https://github.com/TECH7Fox/vscode-markdown-kroki.git"
   },
   "bugs": {
-    "url": "https://github.com/pomdtr/vscode-markdown-kroki/issues"
+    "url": "https://github.com/TECH7Fox/vscode-markdown-kroki/issues"
   },
   "engines": {
     "vscode": "^1.69.1"
