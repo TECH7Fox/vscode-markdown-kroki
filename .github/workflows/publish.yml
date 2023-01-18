@@ -14,6 +14,7 @@ jobs:
           node-version: 16
       - name: Build
         run: |
+          npm ci
           npm i -g vsce
           vsce package
       - name: Upload VSIX to release
