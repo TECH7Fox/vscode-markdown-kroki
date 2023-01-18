@@ -12,15 +12,15 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm i -g vsce
-      - run: vsce package
-      - name: Publish to Github Packages
-        uses: xresloader/upload-to-github-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: |
+          npm i -g vsce
+          vsce package
+      - name: Upload VSIX to release
+        uses: svenstaro/upload-release-action@v1-release
         with:
-          file: "*.vsix"
-          tags: true
-          draft: true
-          prerelease: true
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: /home/runner/work/vscode-markdown-kroki/vscode-markdown-kroki/*.vsix
+          tag: ${{ github.ref }}
+          file_glob: true
+          overwrite: true
