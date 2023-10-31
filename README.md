@@ -23,7 +23,6 @@ graph TD;
 
 Supported formats:
 
-
 - actdiag
 - blockdiag
 - bpmn
