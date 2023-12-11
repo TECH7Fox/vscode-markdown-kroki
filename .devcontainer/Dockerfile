@@ -2,6 +2,7 @@ FROM node:21-slim
 
 # Install pre-requisites
 RUN apt-get update && apt-get install --no-install-recommends --yes \
+    ca-certificates
     git
 
 # Install Yeoman and the VS Code Extension Generator
