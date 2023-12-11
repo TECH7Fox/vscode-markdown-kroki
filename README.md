@@ -28,6 +28,8 @@ Supported formats:
 - bpmn
 - bytefield
 - c4plantuml
+- d2
+- dbml
 - diagramsnet
 - ditaa
 - erd
@@ -43,7 +45,10 @@ Supported formats:
 - seqdiag
 - structurizr
 - svgbob
+- symbolator
+- tikz
 - umlet
 - vega
 - vegalite
 - wavedrom
+- wireviz
